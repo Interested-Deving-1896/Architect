@@ -1,146 +1,75 @@
-# 🚀 ARCHITECT SCRIPT
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# Architect
 
-[🇫🇷 Passer à la version française](#script-architect-fr)  
-[📚 Architect Wiki](https://github.com/Cardiacman13/Architect/wiki)
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/Architect)
 
-A post-install script designed to set up a complete and ready-to-use **Arch Linux system** right after using `archinstall`. Optimized for **gamers**, this script provides modular configuration options, minimal bloat, and performance in mind.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
----
+## Architecture
 
-> ⚠️ **DISCLAIMER**  
-> This script is derived from [personal post-install notes](https://github.com/Cardiacman13/Architect/wiki) and fully suits my hardware and needs. It has been thoroughly tested on my system but **comes with no warranty** for compatibility on your machine.
->
-> This is not a distribution. It's a helper to **speed up post-installation**, and its maintenance is your responsibility.
->
-> Arch Linux is a **DIY (Do It Yourself)** distribution. It assumes you have technical knowledge or are willing to read the documentation. If you're not self-sufficient, Arch is not for you.
->
-> > 📌 From the [Arch Wiki](https://wiki.archlinux.org/title/Arch_Linux):  
-> > _"While many GNU/Linux distributions attempt to be more user-friendly, Arch Linux has always been and will remain a user-centric distribution. It is designed for competent GNU/Linux users who are willing to read documentation and solve their own problems."_  
-> >
-> > Running Arch without reading documentation defeats its purpose.
-> > 
-> 🧠 **Note:** If you are using an **NVIDIA GPU**, it must be from the **16xx (Turing) series or newer** to use the **`nvidia-open-dkms`** driver (open kernel modules).  
->  
-> If you own a **Pascal GTX 10xx** or an **older GPU** (e.g., **Maxwell**, **Kepler**, or earlier such as **GTX 9xx / 8xx / 7xx**), you need the **nvidia-580xx-dkms* from the AUR. [NVIDIA 590 driver drops Pascal and lower support](https://archlinux.org/news/nvidia-590-driver-drops-pascal-support-main-packages-switch-to-open-kernel-modules/)
----
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-## ⚙️ Installation Command
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
 ```bash
-sudo pacman -S --needed git base-devel \
-  && git clone https://github.com/Cardiacman13/Architect.git ~/Architect \
-  && cd ~/Architect \
-  && chmod +x ./architect.sh \
-  && ./architect.sh
+git clone https://github.com/Interested-Deving-1896/Architect.git
+cd Architect
 ```
 
-At the end of the script, you can delete the ~/Architect folder.
+## Usage
 
-[🧠 Configure Arch the easy way - Architect Script by Cardiac](https://youtu.be/0MV3MxmO7ns?si=eOMc-e4wdSwv1Fbb)
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-[![Configure Arch the easy way](https://img.youtube.com/vi/0MV3MxmO7ns/0.jpg)](https://youtu.be/0MV3MxmO7ns?si=eOMc-e4wdSwv1Fbb)
+## Configuration
 
----
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-## 🧩 Features Overview
+## CI
 
-1. **Pacman Setup** — Optimized package manager (parallel downloads, color, etc.)
-2. **Shell Aliases** — Fast commands like:
-   - `update-arch`
-   - `clean-arch`
-   - `fix-key`
-   - `update-mirrors`
-3. **Scheduler Optimization** — Low Latency Scheduler for Gaming and Desktop.
-4. **Zram Install and Configuration** — Better settings for Zram
-5. **GPU Configuration** — NVIDIA/AMD/Intel setup.
-6. **AUR Support** — Install `yay` or `paru`, depending on your preference.
-7. **Dependencies & Multimedia Codecs** — Installation of essential environment tools (fonts, codecs, system utilities).
-8. **Shell Configuration** — Optional setup and customization of Fish, or Zsh.
-9. **Optional Components** — Printers, Firewall, Bluetooth, Sound, etc.
-10. **Extra Software** — Browsers, games, apps, media tools, and more.
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
----
+## Mirror chain
 
-## 🔗 Resources
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/Architect`](https://github.com/Interested-Deving-1896/Architect) and mirrored through:
 
-- 📖 [ArchWiki](https://wiki.archlinux.org/)
-- [📚 Architect Wiki](https://github.com/Cardiacman13/Architect/wiki)
----
-
-<a name="script-architect-fr"></a>
-
-# 🚀 SCRIPT ARCHITECT
-
-Un script post-installation pour **Arch Linux**, destiné à configurer rapidement un système propre après `archinstall`. Pensé pour les joueurs recherchant **performance, minimalisme et flexibilité**.
-
----
-
-> ⚠️ **AVERTISSEMENT**  
-> Ce script est tiré de [notes personnelles](https://github.com/Cardiacman13/Architect/wiki). Il fonctionne parfaitement sur ma machine, mais **n'est garanti sur aucun autre système**.
->
-> Ce n'est **pas une distribution**, mais un script pour **gagner du temps après l'installation**. Vous restez responsable de la maintenance de votre système.
->
-> Arch Linux est une **distribution DIY**. Il est indispensable de savoir lire la documentation, comprendre ce que vous faites et être autonome en cas de souci.
->
-> > 📌 Extrait du [Wiki officiel Arch Linux](https://wiki.archlinux.org/title/Arch_Linux_(Fran%C3%A7ais)) :  
-> > _"Tandis que de nombreuses distributions GNU/Linux tentent d’être plus conviviales, Arch Linux a toujours été et restera centrée sur l’utilisateur. Elle est destinée aux utilisateurs compétents ou ayant une mentalité de bricoleur prêt à lire la documentation et à résoudre ses propres problèmes."
-> >
-> > Être sous Arch sans lire la doc, c’est aller à l’encontre de son principe.
-> > 
-> 🧠 **Remarque :** Si vous utilisez un **GPU NVIDIA**, il doit appartenir à la série **16xx (Turing) ou plus récente** pour pouvoir utiliser le pilote **`nvidia-open-dkms`** (modules open source du noyau).  
->
-> Si vous possédez une carte graphique **Pascal GTX 10xx** ou plus ancienne (par exemple **Maxwell**, **Kepler**, etc. comme les **GTX 9xx / 8xx / 7xx**), vous devez utiliser le **pilote nvidia-580xx-dkms** à la place disponible dans le AUR.[Le driver NVIDIA 590 abandonne le support de Pascal et des versions antérieures](https://archlinux.fr/accueil/le-driver-nvidia-590-abandonne-le-support-de-pascal-et-des-versions-anterieures-les-paquets-principaux-passent-aux-modules-open)
-
----
-
-## Le grand minimum à savoir pour utiliser Arch Linux : 
-
-[Arch Linux - les bonnes pratiques avec Antiz !](https://youtu.be/4CiGmS3UM3Y?si=FARbltfaw2oXVBpO)
-
-[![Arch Linux - les bonnes pratiques avec Antiz !](https://img.youtube.com/vi/4CiGmS3UM3Y/0.jpg)](https://youtu.be/4CiGmS3UM3Y?si=FARbltfaw2oXVBpO)
-
----
-
-## 🧠 Lancer le Script
-
-```bash
-sudo pacman -S --needed git base-devel \
-  && git clone https://github.com/Cardiacman13/Architect.git ~/Architect \
-  && cd ~/Architect \
-  && chmod +x ./architect.sh \
-  && ./architect.sh
+```
+Interested-Deving-1896/Architect  ──►  OpenOS-Project-OSP/Architect  ──►  OpenOS-Project-Ecosystem-OOC/Architect
 ```
 
-À la fin du script, vous pouvez supprimer le dossier `~/Architect`.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
----
+## Contributors
 
-## 🧩 Fonctions Principales
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-1. **Configurer Pacman** — Amélioration du gestionnaire de paquets.
-2. **Ajout d'Aliases** — Commandes utiles :
-   - `update-arch`
-   - `clean-arch`
-   - `fix-key`
-   - `update-mirrors`
-3. **optimisation du scheduler** — Ordonnanceur Faible Latence Pour Jeux et Bureau.
-4. **Zram installation et Configuration** — Amélioration de la configuration de Zram.
-5. **Configuration GPU** — Support complet pour NVIDIA, AMD, Intel.
-6. **Support AUR** — Installe `yay` ou `paru`.
-7. **Dépendances et Codecs multimédia** — Installation de l'environnement de base (polices, codecs, outils systèmes).
-8. **Configuration du Shell** — Installation et personnalisation optionelle et au choix de Fish ou Zsh.
-9. **Composants Optionnels** — Imprimantes, Firewall, Bluetooth, Audio, etc.
-10. **Installation de Logiciels** — Navigateur, multimédia, développement, .
+## Origins
 
----
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-## 🔗 Ressources
+## Resources
 
-- 📖 [ArchWiki](https://wiki.archlinux.org/)
-- [📚 Architect Wiki](https://github.com/Cardiacman13/Architect/wiki)
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
----
+## License
 
-## 🙏 Remerciements
-
-Merci à l'équipe d'Arch Linux, à la communauté Linux, aux mainteneurs AUR et à tous les contributeurs.
+<!-- AI:start:license -->
+<!-- License not detected — add a LICENSE file to this repo. -->
+<!-- AI:end:license -->
